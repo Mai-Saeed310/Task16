@@ -1,0 +1,852 @@
+  /* XX-Large devices (larger desktops, 1400px and up) */
+@media (max-width: 1400px) {  }
+
+
+ /* X-Large devices (large desktops, 1200px and up) */
+ @media (max-width: 1280px) { 
+ 
+/*   =======================================================
+     ==================== Header section ===================
+     ======================================================= */
+
+     .hamburger-menu {
+        display: block;
+    }
+
+    #dsk-navbar {
+        display: none !important;
+    }
+
+    .mobile-navigation.active {
+        opacity: 1;
+        transform: translateX(0)}
+
+    .hamburger{
+        display: block;   
+        /* عشان أخلي الزر جنب الأيقونة */
+        margin-left: 60%;  
+    }
+    .transparent-bg.active {
+        position: fixed;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        pointer-events: auto;
+        z-index: 50;
+    }
+
+     li:hover > .dropdown{
+        margin-top: -5px;
+    }
+        
+    .dropdown2 {
+        display: none;
+        position: absolute;    
+    }
+
+    li:hover > .dropdown2 {
+        display: block; 
+        position: absolute;
+        top: 0;
+        left: 80%; /* مكان ظهور القائمة بشكل مناسب */
+        background-color: white;
+    }
+
+
+/*   =======================================================
+     ==================== Home section ===================
+     ======================================================= */
+
+    .Home{
+        padding-right: 2em;
+        padding-left: 2em;
+    }
+    /* عشان أخلي كل الكارد نفس الطول */
+    .Home .card{
+        height: 300px;
+    }
+
+/*   =======================================================
+     ==================== client section ===================
+     ======================================================= */
+
+    .client img{
+        width: 80px;
+    }
+    
+
+/*   =======================================================
+     ================ Testimonials section =================
+     ======================================================= */
+    
+    .testimonial-card {
+        height: 200px;
+    }
+    
+
+/*   =======================================================
+     ================ Porfolio section =================
+     ======================================================= */
+    
+    .Porfolio-info .icon1,
+    .Porfolio-info .icon2{
+        font-size: 1rem;
+    }
+
+    .img1,.img2,.img3,.img4,.img5,.img6,.img7,.img8,.img9{
+        width: 350px !important;
+    }
+
+/*   =======================================================
+     ================ Team section =================
+     ======================================================= */
+
+     .Team {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    
+    .Team img{
+        width: 250px;
+    }
+    
+
+/*   =======================================================
+     ================ Pricing section =================
+     ======================================================= */
+
+     .Pricing {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    
+    .Business-plan {
+        width: 430px;
+        margin-left: -120px;
+
+    }
+    
+
+/*   ====================================================================
+     ================ Frequently Asked Questions section ================
+     ===================================================================*/
+
+     .faq{
+        padding-left: 5em;
+        padding-right: 5em;    
+    }
+    
+    .q{
+        margin-left: 5em;
+
+    }
+
+/*   =======================================================
+     ================ contact section =================
+     ======================================================= */
+
+    
+    form .name, form .email{
+    /* top, right, bottom , lef */
+        padding: 5px 100px 5px 10px;
+    
+    }
+    
+    form .name {
+        margin-left: -30px;
+    }
+    
+    form .email{
+        margin-left: -5px;
+    }
+
+/*   =======================================================
+     ================ footer section =================
+     ======================================================= */
+
+     .footer{
+        background-color: #f0f8ff;
+        height: 500px;
+        padding-top: 50px;
+        padding-left: 7em;
+        padding-right: 5em;
+    }
+    
+    footer .logo {
+        color: #124265 ;
+        font-family: "Merriweather", serif;
+        text-decoration: none;
+        font-size: 32px;
+        font-weight: bold;
+    }
+    
+    footer h4 {
+        color: #124265 ;
+    }
+    
+    .footer .social {
+        gap: 10px; 
+        transition: all 0.3s;
+    
+    }
+    
+    .footer .social a{
+        width: 36px;
+        height: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        border: 1px solid #2487ce;
+        text-decoration: none;
+    }
+    
+    .footer .social i{
+        font-size: 20px;
+    }
+    
+    .footer .social a:hover{
+        color: white;
+        background-color: #2487ce;
+    }
+    
+    .footer ul li {
+        list-style: none;
+        padding: 5px 0;
+        margin-left: -28px;
+    }
+    
+    .footer ul li a{
+        text-decoration: none;
+        color: #5c5c5c;
+    
+    
+    }
+    
+    .footer ul li a:hover{
+        color: #2487ce;
+        font-family: "Merriweather", serif;
+    }
+    
+    .copyright {
+        background-color: #2487ce;
+        margin-top: 50px;
+        padding: 10px;
+    }
+    
+  }
+
+ /* Large devices (desktops, 992px and up) */
+ @media (max-width: 992px) {  }
+
+ /* Medium devices (tablets, 768px and up) */
+ @media (max-width: 768px) { 
+    body {
+        overflow-x: hidden; /* يمنع التمرير الأفقي */
+      }
+/*   =======================================================
+     ==================== Header section ===================
+     ======================================================= */
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    #dsk-navbar {
+        display: none !important;
+    }
+
+    .mobile-navigation.active {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    .hamburger{
+        display: block; 
+        /* عشان أخلي الزر جنب الأيقونة */
+        margin-left: 40%;   
+    }
+    .transparent-bg.active {
+        position: fixed;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        pointer-events: auto;
+        z-index: 50;
+    }
+
+     li:hover > .dropdown{
+        margin-top: -5px;
+    }
+        
+    .dropdown2 {
+        display: none;
+        position: absolute;    
+    }
+
+    li:hover > .dropdown2 {
+        display: block; 
+        position: absolute;
+        top: 0;
+        left: 80%; /* مكان ظهور القائمة بشكل مناسب */
+        background-color: white;
+    }
+    
+/*   =======================================================
+     ==================== Home section ===================
+     ======================================================= */
+     .Home{
+        padding-right: 2em;
+        padding-left: 2em;  
+        height: 900px;
+        height: fit-content;
+    }
+
+    .Home .card{
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    /*   =======================================================
+     ==================== About section ===================
+     ======================================================= */
+
+    .about{
+        padding-right: 2em;
+        padding-left: 2em;
+    }
+
+    .about i{   
+        margin-left: 0px;    
+    }
+    
+    .about span{
+        display: inline;
+    }
+    /*   =======================================================
+     ==================== Data section ===================
+     ======================================================= */
+     .Data{
+        padding-right:2em;
+        padding-left: 5em;
+    }
+    
+  /*   =======================================================
+     ==================== video section ===================
+     ======================================================= */
+
+    .video video{
+        margin-left: -40px;
+    }
+
+/*   =======================================================
+     ==================== client section ===================
+     ======================================================= */
+
+.client{
+    padding-left: 5em;
+    height: 150px;
+
+}
+.client img{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/*   =======================================================
+     ================ Testimonials section =================
+     ======================================================= */
+
+     .Testimonials  {
+        padding-right: 2em;
+        padding-left: 5em;
+    }
+    
+    .testimonial-card {
+        height: 500px;
+    }
+       
+/*   =======================================================
+     ================ Services section =================
+     ======================================================= */
+
+.Services{
+    margin-top: 100px;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+/*   =======================================================
+     ================ call-to-action section =================
+     ======================================================= */
+
+.call-to-action {
+    margin-top: 20px;
+}
+    
+/*   =======================================================
+     ================ Porfolio section =================
+     ======================================================= */
+
+
+.Porfolio ul {
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(5, max-content); 
+    gap: 0px;
+    margin-left: 10px;
+    margin-right: 0px;
+ 
+      grid-template-areas:
+      "img1 img2 " 
+      "img3 img6  "
+      "img5 img4 "
+      "img9 img8 "
+      ".  img7 "    ;
+}
+
+.img1,.img2,.img3,.img4,.img5,.img6,.img7,.img8,.img9{
+width: 320px !important;
+}
+
+.img1{
+    margin-bottom: 10px;
+}
+
+.img6{
+    margin-top: -190px;
+    margin-bottom: 10px;
+}
+
+.img5{
+    margin-top: -150px;
+    margin-bottom: 10px;
+}
+
+.img9,.img4,.img7,.img8{
+    margin-top: 00px;
+}
+
+
+.img8{
+    margin-top: -140px;
+}
+
+.img7{
+    margin-top: -120px;
+}
+
+.Porfolio-info {
+    background-color: white;
+    color: #003366;
+    width: 100%; 
+    height: 100px;
+    position: absolute;
+    bottom: 0; 
+    opacity: 0; 
+    display: flex;
+    gap: 10px;
+    transition: opacity 0.7s ease; 
+}
+
+.Porfolio-info .icon1{
+    font-size: 1rem;
+    margin-left: 50px;
+}
+
+.Porfolio-info .icon2{
+    font-size: 1rem;
+}
+
+/*   =======================================================
+     ================ Team section =================
+     ======================================================= */
+
+     .Team {
+        height: fit-content;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    .Team p{
+        margin-bottom: 50px;
+    }
+    .Team .member-info{
+        margin-bottom: 30px;
+    }
+    .Team .social{
+        bottom: 140px; 
+    }
+    
+/*   =======================================================
+     ================ Pricing section =================
+     ======================================================= */
+
+    .Pricing {
+        height: fit-content;
+        margin-top: 50px;
+        padding-top: 5px;
+        padding-left: 2em;
+        padding-right: 2em;
+}
+
+    .Free-plan, .Developer-plan,.Business-plan {
+        margin-bottom: 30px;
+        margin-left: 100px;
+    }
+
+    .Business-plan {
+        position: static;
+        margin-top: 0px;
+    }
+
+/*   ====================================================================
+     ================ Frequently Asked Questions section ================
+     ===================================================================*/
+
+    .faq{
+        margin-top: 80px;
+        padding-left: 2em;
+        padding-right: 5em;    
+    }
+
+    .faq p{
+        margin-bottom: 70px;
+    }
+    
+    .q{
+        width: 100%;
+        margin-left: 2em;
+
+    }
+
+/*   =======================================================
+     ================ contact section =================
+     ======================================================= */
+
+     .contact{
+        padding-top: 50px;
+    }
+    
+    .contact p{
+        margin-bottom: 50px;
+    }
+ 
+    
+    form .name, form .email{
+        padding: 5px 60px 5px 10px;
+    
+    }
+    
+    form .name {
+        margin-left: -20px;
+    }
+    form button{
+        margin-bottom: 50px;
+    }
+    
+/*   =======================================================
+     ================ footer section =================
+     ======================================================= */
+
+.footer{
+    height: fit-content;
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+.footer ul li {
+    list-style: none;
+    padding: 5px 0;
+    margin-left: 0px;
+}
+.footer .social {
+    margin-bottom: 50px;
+}
+    
+}
+
+ 
+ /* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+    body {
+        overflow-x: hidden;  /* يمنع التمرير الأفقي */
+      }
+/*   =======================================================
+     ==================== Header section ===================
+     ======================================================= */
+     .hamburger{
+        /* عشان أخلي الزر جنب الأيقونة */
+        margin-left: 20%;  
+    }
+      
+    /*   =======================================================
+     ==================== Home section ===================
+     ======================================================= */
+
+.Home{
+    height: fit-content;
+    padding-right: 0em;
+    padding-left: 0em;
+}
+
+.Home .card{
+    margin: auto;
+    margin-bottom: 20px;
+    width: 80vw;
+}
+
+/*   =======================================================
+     ==================== About section ===================
+     ======================================================= */
+
+     .about{
+        height: fit-content;
+        padding-right: 2em;
+        padding-left: 2em;
+    }
+    
+    /* عشان نخلي كل الأعمدةcol تظهر في صفوف منفصله*/
+    .about .row {
+        flex-direction: column;
+    }
+   
+    .about span{
+        display: inline-block;
+        margin-bottom: 10px;
+        margin-left: 5px;
+    }
+
+    .about p{
+        margin-bottom: 20px;
+    
+    }
+
+  .about .col {
+        margin-bottom: 40px;  
+
+    }
+   
+/*   =======================================================
+     ==================== Data section ===================
+     ======================================================= */
+
+    .Data .row{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Data .col{
+        margin-bottom: 40px;
+    }
+    
+/*   =======================================================
+     ==================== video section ===================
+     ======================================================= */
+
+.video{
+
+    /*top right bottom left*/
+    margin: 50px 50px 0 50px;
+}
+
+/*   =======================================================
+     ==================== client section ===================
+     ======================================================= */
+
+     .client{
+        padding-left: 5em;
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 80px;
+
+    }
+    .client img{
+        margin: 30px 90px 20px 0;
+    }
+    
+
+/*   =======================================================
+     ================ Testimonials section =================
+     ======================================================= */
+
+
+     .Testimonials  {
+        padding-right: 2em;
+        padding-left: 2em;
+    }
+    
+    .Testimonials .row {
+        flex-direction: column;
+    }
+    .testimonial-card {
+        margin-right: 0px;
+        margin-bottom: 50px;
+    }
+    
+
+/*   =======================================================
+     ================ Services section =================
+     ======================================================= */
+
+     .Services{
+        margin-top: 80px;
+        padding-top: 50px;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .Services .row{
+        flex-direction: column;
+    }
+
+/*   =======================================================
+     ================ Porfolio section =================
+     ======================================================= */
+ 
+    .Porfolio ul {
+            display:flex ;
+    }
+    
+    .images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .img5,.img4,.img9,.img8,.img7 {
+        margin-top: 0; 
+    }
+
+    /* all the div which are dircet children of the images class */
+    .images > div {
+        margin: 0;
+    }
+    
+    .Porfolio-info .icon1{
+        font-size: 1rem;
+        margin-left: 50px;
+    }
+    
+    .Porfolio-info .icon2{
+        font-size: 1rem;
+    }
+
+
+/*   =======================================================
+     ================ Team section =================
+     ======================================================= */
+
+     .Team {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    .Team .col {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        text-align: center; 
+    }
+    
+    .Team .member-info{
+        width: 300px;
+    }
+
+    .Team .social{
+        bottom: 140px; 
+        left: 20%;
+        margin-left: 80px;
+    }
+    
+    /*   =======================================================
+     ================ Pricing section =================
+     ======================================================= */
+     .Pricing {
+        height: fit-content;
+        margin-top: 50px;
+        padding-top: 50px;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+     .Pricing .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        text-align: center; 
+}
+
+    .Free-plan, .Developer-plan,.Business-plan {
+        margin-left: 0px;
+        text-align: left;
+    }
+
+/*   ====================================================================
+     ================ Frequently Asked Questions section ================
+     ===================================================================*/
+
+
+.q {
+    padding: 0 20px; /* حواف داخلية للعناصر */
+}
+
+/*   =======================================================
+     ================ contact section =================
+     ======================================================= */
+
+ 
+.contact .row {
+    flex-direction: column;
+}
+form .email{
+    margin-left: -18px;
+}
+
+form .name , form .email{
+    width: 100%;
+
+}
+form .name, form .email{
+        padding: 5px 150px 5px 10px;
+
+    }
+    form .subject, form .Message{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        width: 650px;
+    }
+    form .name,form .email {
+        margin-top: 20px;
+    }
+
+    
+/*   =======================================================
+     ================ footer section =================
+     ======================================================= */
+
+.footer{
+    height: fit-content;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.footer .row{
+    flex-direction: column;
+}
+
+
+
+
+
+ }
+
+
+
+

@@ -1,0 +1,1199 @@
+/* هنا هنحط المتغيرات بتاعت البوت ستراب اللي عايزين نعدل عليها */
+/*القيمة اللي بياخدها المتغير عشان لازم أعمل زيها لما اجي اعدل format لازم اخلي بالي من */
+:root{
+/* bg means that background */
+--bs-btn-bg: #124265;
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*   =======================================================
+     ==================== Header section ===================
+     ======================================================= */
+header h1 {
+    color: #124265 ;
+    font-family: "Merriweather", serif;
+}
+
+header{
+    padding: 10px 5vw; /****** Added *******/
+    height: 100px;
+    background-color: white;
+    align-items: center;
+}
+.hamburger-menu { /****** Added *******/
+    display: none;
+    border: none;
+    background-color: inherit;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+/****** Added *******/
+.mobile-navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 350px; /* عرض القائمة */
+    height: 100%; /* اجعل القائمة تأخذ كامل الطول */
+    background-color: white;
+    z-index: 100; /* فوق كل العناصر */
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    overflow-y: auto; /* إضافة شريط تمرير عند الحاجة */
+    padding: 0; /* إزالة أي padding داخلي */
+}
+
+.hamburger{
+    display: none;
+    margin-left: 50px;
+}
+.hamburger-button a{
+    text-decoration: none;
+}
+.hamburger li{
+    list-style: none;
+}
+
+.mobile-navigation ul {
+    list-style: none;
+    margin-top: 100px;
+    padding: 0; /* إزالة البُعد الداخلي */
+}
+
+.mobile-navigation ul li {
+    padding: 20px 20px; /* تعديل المساحة حول النصوص */
+    border-bottom: 1px solid #ddd; /* خط فاصل */
+}
+
+.mobile-navigation ul li a {
+    text-decoration: none;
+    color: #124265;
+    font-size: 18px;
+    display: block;
+    width: 100%; /* اجعل العنصر يأخذ العرض الكامل */
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #124265;
+    font-size: 20px;
+    transition: all 0.3s;
+    font-family: "Poppins", serif; 
+}
+header ul li {
+ padding: 10px 30px;
+ /* الطبيعي بتاعها انها تظهر العناصر واحدة فوق الأخرى في اتجاه عمودي li */
+/* block تخلي العناصر جنب بعضها مع الاحتفاظ بخصائص ال */
+ /* display: inline-block; */
+ /* نحطه عند الحاجة اللي عايزين القائمة تتموضع عندها */
+ position: relative;
+}
+
+header ul{
+    list-style: none;
+
+}
+
+a:hover {
+  color: #2487ce;
+}
+
+header .button1 a , .hamburger-button a{
+color: white;
+background-color: #2487ce;
+border-radius: 5px;
+padding: 8px 25px;
+font-size: 14px;
+}
+
+header .button1 a:hover,
+.hamburger-button a:hover{
+    background-color: #3fa1e6;
+
+}
+
+.dropdown  {
+    /* لازم نحطه على الحاوي الرئيسي للقائمة */
+    position: absolute;  
+    display: none;
+}
+/*  */
+ li:hover > .dropdown{
+    display: block;
+
+}
+    
+.dropdown {
+    transition: all 0.5s ;
+    border: 1px solid #ddd; /* إضافة حدود اختيارية */
+    background-color: white;
+
+}
+
+.dropdown2 {
+    display: none;
+    position: absolute;  
+    
+}
+
+/* when we hover li the code will apply on 
+only the dircet children who has dropdown2 class */
+/* the code will be apply on the dropdown2 class if the 
+element who has the class is a direct child of the li */
+li:hover > .dropdown2 {
+    display: block;
+    border: 1px solid #ddd; 
+    left: -110%;
+    top: -10px;
+    background-color: white;
+}
+
+/*   =======================================================
+     ==================== Home section ===================
+     ======================================================= */
+
+.Home{
+    background-image:url(../img/background.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    padding-right: 7em;
+    padding-left: 7em;
+    margin-top: 50px;
+
+}
+.Home li{
+    list-style: none;
+
+}
+.Home .button2 a{
+    color: white;
+    background-color: #2487ce;
+    border-radius: 5px;
+    padding: 13px 40px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.Home .button2 a:hover{
+    background-color: #3fa1e6;
+
+}
+
+.Home h1{
+    color: #124265;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    justify-content: center;
+
+}
+
+.Home p{
+    color: #5c5c5c;
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    font-family: "Poppins", serif;
+
+}
+
+.Home .card{
+    padding: 20px;
+    text-align: left;
+    box-shadow: 5px 5px 10px #b7b7b7;
+    transition: transform 0.3s ease-in-out; 
+
+}
+
+.Home .card i {
+    font-size: 2rem;
+    color: #2487ce;    
+}
+
+.Home .card .card-title {
+    color: #124265;
+    margin-top: 1em;
+    font-family: "Poppins", serif;
+
+}
+
+.Home .card .card-text{
+    color: #8d8d8d;
+    font-size: 15px;
+    margin-top: 1em;
+    font-family: "Poppins", serif;
+
+}
+
+.Home .card :hover > .card-title{
+    color: #2487ce;    
+
+}
+
+.Home .card:hover {
+    transform: scale(1.1); /* Scale the entire card on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+}
+
+/*   =======================================================
+     ==================== About section ===================
+     ======================================================= */
+
+.about{
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    padding-right: 7em;
+    padding-left: 7em;
+}
+
+.about h2{
+    color: #124265;
+    margin-top: 70px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.about p{
+    color: #5c5c5c;
+    font-size: 1rem;
+    margin-bottom: 30px;
+    font-family: "Poppins", serif;
+
+}
+
+.about i{   
+    margin-left: 10px;
+    color: #2487ce;    
+
+}
+
+
+.about span{
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+.about li{
+    list-style: none;
+}
+.about .button3 a{
+    color: white;
+    background-color: #2487ce;
+    border-radius: 5px;
+    padding: 13px 40px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.about .button3 a:hover{
+    background-color: #3fa1e6;
+
+}
+/*   =======================================================
+     ==================== Data section ===================
+     ======================================================= */
+
+.Data{
+    background-color: #f0f8ff;
+    padding-right:7em;
+    padding-left: 15em;
+
+}
+
+.Data span{
+    color: #2487ce;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.Data p{
+color: #5c5c5c;
+}
+
+/*   =======================================================
+     ==================== video section ===================
+     ======================================================= */
+
+.video{
+    margin-top: 50px;
+}
+
+.video video{
+    width: 600px;
+    height: 500px;
+}
+
+
+.video h3{
+    color: #124265;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.video .description {
+    font-style: italic;
+}
+
+.video li{
+    list-style: none;
+}
+
+.video span{
+    display: inline-block;
+    margin-bottom: 10px;
+
+}
+
+.video i{
+    color: #2487ce;    
+    margin-right: 5px;
+}
+
+/*   =======================================================
+     ==================== client section ===================
+     ======================================================= */
+
+.client{
+    background-color: #f0f8ff;
+    padding-left: 10em;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+.client img{
+    width: 100px;
+    filter: grayscale(100%) contrast(0);
+    transition: transform 0.3s ease-in-out; 
+    margin-right: 80px;
+}
+
+.client img:hover{
+    filter: grayscale(0%);
+    transform: scale(1.2); 
+
+}
+
+/*   =======================================================
+     ================ Testimonials section =================
+     ======================================================= */
+
+
+.Testimonials  {
+    padding-right: 7em;
+    padding-left: 10em;
+}
+
+.Testimonials .title h2 {
+    color: #124265;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.Testimonials .title p {
+    color: #5c5c5c;
+    font-size: 1rem;
+    font-family: "Poppins", serif;
+}
+
+.testimonial-card {
+    height: 150px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 30px;
+}
+
+.testimonial-card .quote-icon {
+    color: #87CEEB; 
+    font-size: 28px;
+}
+
+.testimonial-card .testimonial-text {
+    font-style: italic;
+    color: #6c757d;
+}
+.testimonial-card .profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: 10px; 
+    border: 4px solid white;
+}
+
+.testimonial-card h3 {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #003366; 
+}
+  
+.testimonial-card h4 {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+
+/*   =======================================================
+     ================ Services section =================
+     ======================================================= */
+
+.Services{
+    background-color: #f0f8ff;
+    margin-top: 200px;
+    height: fit-content;
+    padding-top: 50px;
+    padding-left: 7em;
+    padding-right: 7em;
+}
+
+.Services h2{
+    color: #124265;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.Services p{
+    color: #5c5c5c;
+    font-size: 1rem;
+    font-family: "Poppins", serif;
+}
+
+.Services .card{
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+}
+
+.Services .card-title{
+    color: #124265;
+    margin-top: 0.5em;
+    font-family: "Poppins", serif;
+    font-weight: bold;
+}
+
+.Services .card-text {
+    color: #5c5c5c;
+    font-size: 15px;
+    margin-top: 1em;
+    font-family: "Poppins", serif;
+    margin-bottom: 50px;
+
+}
+
+.Services .card i {
+    font-size: 40px;
+    border-radius: 10%;
+    border-color: #6c757d;
+
+}
+
+
+.icon-container1,.icon-container2,.icon-container3,
+ .icon-container4,.icon-container5,.icon-container6 {
+    background-color: #f0f0f0; 
+    border-radius: 50%;
+    display: inline-block;
+    padding: 20px;
+    transition: all 0.3s ease; 
+    margin-top: 50px;
+
+}
+
+.icon1, .icon2, .icon3, .icon4,
+ .icon5 , .icon6 {
+    transition: color 0.3s ease;
+
+ }
+.icon1{
+    color: #3eb4bd;
+}
+
+.icon2{
+    color: orange;
+}
+
+.icon3{
+    color: green;
+}
+
+.icon4{
+    color: red;
+}
+
+.icon5{
+    color: #5933cc ;
+}
+
+.icon6{
+    color: #cb2a7b ;
+}
+
+.icon-container1:hover {
+    background-color: #3eb4bd; /* تغيير لون الخلفية عند الـ hover */
+}
+  
+.icon-container2:hover{
+    background-color: orange; 
+}
+.icon-container3:hover{
+    background-color: green; 
+}
+
+.icon-container4:hover{
+    background-color:red; 
+}
+
+.icon-container5:hover{
+    background-color: #5933cc; 
+}
+
+.icon-container6:hover{
+    background-color:#cb2a7b; 
+}
+
+.icon-container1:hover .icon1,.icon-container2:hover .icon2,
+.icon-container3:hover .icon3,.icon-container4:hover .icon4,
+.icon-container5:hover .icon5,.icon-container6:hover .icon6{
+    color: #f0f0f0; 
+}
+
+
+/*   =======================================================
+     ================ call-to-action section =================
+     ======================================================= */
+
+.call-to-action {
+    background-color: #2487ce;
+    height: 300px;
+    width: 100%;
+
+}
+
+.call-to-action .title,.call-to-action .description{
+    color: white;
+    font-family: "Poppins", serif;
+}
+
+.call-to-action .button4 {
+    color: white;
+    text-decoration: none;
+    background-color: #2487ce;
+    border-radius: 5px;
+    padding: 10px 40px;
+    font-size: 14px;
+    border: 2px solid white;
+
+}
+    
+.call-to-action .button4:hover{
+    background-color: #3fa1e6;
+    
+}
+
+/*   =======================================================
+     ================ Porfolio section =================
+     ======================================================= */
+
+.Porfolio h2 {
+    color: #124265;
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+.Porfolio ul {
+    padding-left: 35em;
+    padding-right: 35em;
+    list-style: none;
+}
+
+.Porfolio p {
+    color: #5c5c5c;
+    margin-bottom: 50px;
+}
+
+.Porfolio ul li a{
+    text-decoration: none;
+    color: #5c5c5c;
+    font-weight: bold;
+}
+
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(4, max-content); 
+    gap: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    grid-template-areas:
+        "img1 img2 img3" 
+        "img6 img5 img4 "
+        ". img9 img8 "
+        ". . img7 "
+      ;
+}
+
+.img1 { grid-area: img1; }
+.img2 { grid-area: img2; }
+.img3 { grid-area: img3; }
+.img4 { grid-area: img4; }
+.img5 { grid-area: img5; }
+.img6 { grid-area: img6; }
+.img7 { grid-area: img7; }
+.img8 { grid-area: img8; }
+.img9 { grid-area: img9; }
+
+.img5{
+    margin-top: -200px;
+}
+
+.img4{
+    margin-top: -250px;
+}
+
+.img9{
+    margin-top: -200px;
+}
+
+
+.img8{
+    margin-top: -300px;
+}
+
+.img7{
+    margin-top: -650px;
+}
+
+
+.Porfolio-info {
+    background-color: white;
+    color: #003366;
+    width: 100%; 
+    height: 100px;
+    position: absolute;
+    bottom: 0; 
+    opacity: 0; 
+    display: flex;
+    gap: 10px;
+    transition: opacity 0.7s ease; 
+}
+
+
+.Porfolio-info .icon1{
+    color: #5c5c5c;
+    font-size: 1.5rem;
+    margin-top: 40px;
+    margin-left: 100px;
+}
+
+.Porfolio-info .icon2{
+    color: #5c5c5c;
+    font-size: 1.5rem;
+    margin-top: 40px;
+}
+
+.Porfolio-info h4{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.Porfolio-info p{
+    margin-left: -70px;
+    margin-top: 50px;
+}
+
+.img2 p, .img5 p ,.img8 p {
+    margin-left: -110px;
+}
+.img3 p {
+    margin-left: -120px;
+}
+
+.img6 p,.img9 p {
+    margin-left: -125px;
+}
+
+
+.img1:hover .Porfolio-info ,.img2:hover .Porfolio-info,
+.img3:hover .Porfolio-info, .img4:hover .Porfolio-info,
+.img4:hover .Porfolio-info, .img5:hover .Porfolio-info,
+.img6:hover .Porfolio-info, .img7:hover .Porfolio-info,
+.img8:hover .Porfolio-info, .img9:hover .Porfolio-info{
+    opacity: 1; 
+}
+
+/*   =======================================================
+     ================ Team section =================
+     ======================================================= */
+
+.Team {
+    background-color: #f0f8ff;
+    height: 700px;
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-left: 7em;
+    padding-right: 7em;
+}
+
+.Team h2{
+    font-family: "Poppins", serif;
+    font-weight: bold;
+    color: #124265;
+    text-transform: uppercase;
+}
+
+.Team img{
+    width: 300px;
+    aspect-ratio: 1/1;
+}
+
+.Team .member-info{
+    background-color: white;
+    padding: 20px;
+    text-align: left;
+}
+.Team h4{
+    color: #003366;
+    font-family: "Poppins", serif;
+}
+
+.Team p{
+    color: #5c5c5c;
+    font-family: "Poppins", serif;
+    margin-bottom: 80px;
+}
+
+.Team .social{
+    position: absolute;
+    bottom: 110px; 
+    left: 15%;
+    display: flex;
+    gap: 10px; 
+    opacity: 0;
+    pointer-events: none; /* to avoid interaction when it hidden */
+    transition: all 0.3s;
+    margin-left: 30px;
+}
+
+.Team .col:hover .social {
+    opacity: 1; 
+    pointer-events: auto; /* Enable interaction when visible */
+}
+
+.Team .social i{
+    filter: grayscale(100%) contrast(0);
+    font-size: 20px;
+}
+
+.Team .social a{
+    width: 36px;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0.658);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.Team .social a:hover i{
+    filter: grayscale(0%);
+    color: white; 
+}
+
+.Team .social a:hover {
+    background-color: #003366;
+}
+
+/*   =======================================================
+     ================ Pricing section =================
+     ======================================================= */
+
+.Pricing {
+    height: 700px;
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-left: 7em;
+    padding-right: 7em;
+}
+
+.Pricing h2{
+    font-family: "Poppins", serif;
+    font-weight: bold;
+    color: #124265;
+    text-transform: uppercase;
+}
+
+.Pricing p{
+    color: #5c5c5c;
+    font-family: "Poppins", serif;
+    margin-bottom: 70px;
+}
+
+.Pricing ul {
+    margin-left: -20px;
+}
+
+.Pricing li {
+    list-style: none;
+    padding: 10px 0;
+}
+
+.Pricing i {
+    font-size: 15px;
+} 
+
+.Pricing h3{
+    font-family: "Poppins", serif;
+    color: #124265;
+    margin-bottom: 30px;
+}
+
+.Pricing ul span {
+    color: #8d8d8d;
+}
+
+.Free-plan .fa-check , .Developer-Plan .fa-check{
+    color: #198754;
+}
+
+.Free-plan .fa-x {
+    color: #8d8d8d;
+}
+
+.Free-plan .x {
+    text-decoration: line-through;
+}
+
+.Free-plan .title h4 ,.Developer-plan .title h4 ,
+.Business-plan .title h4 {
+    color:  #2487ce;
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+
+.Free-plan .title span, .Developer-plan .title span,
+.Business-plan .title span{
+    color: #8d8d8d;
+    font-size: 20px;
+}
+
+.Developer-plan .fa-check {
+    color: #198754;
+}
+
+.Pricing-btn {
+    text-decoration: none;
+    color: #8d8d8d;
+    border-radius: 5px;
+    padding: 8px 25px;
+    background-color: white;
+    border: 1px solid #8d8d8d;
+    margin-left: 130px;
+    position: relative; 
+    top: 10px; 
+    left: -40px;
+} 
+
+.Pricing-btn:hover {
+    background-color: #3fa1e6;
+    color: white;
+} 
+
+.Free-plan, .Developer-plan {
+    width: 450px;
+    height: 550px;
+    padding: 50px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.Business-plan {
+    position: absolute;
+    width: 450px;
+    height: 600px;
+    padding: 50px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    margin-left: -70px;
+    margin-top: -30px;
+    background-color: #2487ce;
+    color: white;
+}
+
+.Business-plan h3{
+    color: white;
+}
+
+.Business-plan ul span {
+    color: white;
+}
+
+.Business-plan .title h4   {
+    color: white;
+}
+
+.Business-plan .title span{
+    color: white;
+
+}
+
+.Business-plan .Pricing-btn {
+    color: white;
+    background-color: #2487ce;
+    border: 1px solid white;
+    position: relative; 
+    top: 60px; 
+    left: -15px;
+} 
+
+
+.Business-plan .Pricing-btn:hover {
+    background-color: #3fa1e6;
+} 
+
+/*   ====================================================================
+     ================ Frequently Asked Questions section ================
+     ===================================================================*/
+
+.faq{
+    background-color: #f0f8ff;
+    margin-top: 100px;
+    height: 700px;
+    padding-top: 50px;
+    padding-left: 13em;
+    padding-right: 5em;    
+}
+
+.faq h2{
+    font-family: "Poppins", serif;
+    font-weight: bold;
+    color: #124265;
+    text-transform: uppercase;
+     
+}
+
+.faq p{
+    margin-bottom: 70px;
+
+}
+
+.Questions {
+    text-align: justify;  /* to make the equal justification   */
+}
+
+.q{
+    width: 90%;
+    height: 70px;
+    background-color: white;
+    margin-bottom: 10px;
+    color:  #124265;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.q i {
+    margin-left: 10px; 
+}
+
+.q h4 {
+    margin-left: 20px;
+    font-family: "Poppins", serif;
+    font-size: 17px;
+}
+
+/*   =======================================================
+     ================ contact section =================
+     ======================================================= */
+
+.contact{
+    padding-top: 50px;
+}
+
+.contact h2{
+    font-family: "Poppins", serif;
+    font-weight: bold;
+    color: #124265;
+    text-transform: uppercase;
+}
+
+.contact p{
+    font-family: "Poppins", serif;
+    margin-bottom: 80px;
+    margin-top: 20px;
+}
+
+.contact  i {
+    color: white;
+    background-color: #2487ce;
+    font-size: 2rem;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.address,.call, .email{
+    text-align: justify;
+}
+
+.contact h3 {
+    margin-bottom: -15px;
+    font-family: "Poppins", serif;
+    color: #124265;
+
+}
+
+.address h3,form .name,form .email {
+    margin-top: 60px;
+}
+
+.address i{
+    margin-top: 65px;
+}
+.call i,.email i{
+    margin-top: 5px;
+}
+
+form .name, form .email{
+/* top, right, bottom , lef */
+    padding: 5px 120px 5px 10px;
+
+}
+
+form .name {
+    margin-left: -15px;
+}
+
+form .email{
+    margin-left: -5px;
+}
+
+form .subject, form .Message{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 650px;
+}
+
+.form .Message{
+    padding-bottom: 100px;
+}
+
+form button{
+    color: white;
+    background-color: #2487ce;
+    border-radius: 5px;
+    padding: 10px 40px;
+    font-size: 14px;
+    border: #2487ce;
+}
+
+form button:hover{
+    background-color: #3fa1e6;
+}
+
+
+/*   =======================================================
+     ================ footer section =================
+     ======================================================= */
+
+.footer{
+    background-color: #f0f8ff;
+    height: 500px;
+    padding-top: 50px;
+    padding-left: 7em;
+    padding-right: 7em;
+}
+
+footer .logo {
+    color: #124265 ;
+    font-family: "Merriweather", serif;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+footer h4 {
+    color: #124265 ;
+}
+
+.footer .social {
+    gap: 10px; 
+    transition: all 0.3s;
+
+}
+
+.footer .social a{
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #2487ce;
+    text-decoration: none;
+}
+
+.footer .social i{
+    font-size: 20px;
+}
+
+.footer .social a:hover{
+    color: white;
+    background-color: #2487ce;
+}
+
+.footer ul li {
+    list-style: none;
+    padding: 5px 0;
+    margin-left: -28px;
+}
+
+.footer ul li a{
+    text-decoration: none;
+    color: #5c5c5c;
+
+
+}
+
+.footer ul li a:hover{
+    color: #2487ce;
+    font-family: "Merriweather", serif;
+}
+
+.copyright {
+    background-color: #2487ce;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.copyright p{
+    color: white;
+    margin-top: -10px;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.758);
+}
+
