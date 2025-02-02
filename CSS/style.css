@@ -1,10 +1,3 @@
-/* هنا هنحط المتغيرات بتاعت البوت ستراب اللي عايزين نعدل عليها */
-/*القيمة اللي بياخدها المتغير عشان لازم أعمل زيها لما اجي اعدل format لازم اخلي بالي من */
-:root{
-/* bg means that background */
---bs-btn-bg: #124265;
-
-}
 
 
 *{
@@ -40,15 +33,15 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    width: 350px; /* عرض القائمة */
-    height: 100%; /* اجعل القائمة تأخذ كامل الطول */
+    width: 350px; 
+    height: 100%; 
     background-color: white;
-    z-index: 100; /* فوق كل العناصر */
+    z-index: 100; 
     transform: translateX(-100%);
     opacity: 0;
     transition: transform 0.3s ease, opacity 0.3s ease;
-    overflow-y: auto; /* إضافة شريط تمرير عند الحاجة */
-    padding: 0; /* إزالة أي padding داخلي */
+    overflow-y: auto; 
+    padding: 0; 
 }
 
 .hamburger{
@@ -65,12 +58,12 @@ header{
 .mobile-navigation ul {
     list-style: none;
     margin-top: 100px;
-    padding: 0; /* إزالة البُعد الداخلي */
+    padding: 0; 
 }
 
 .mobile-navigation ul li {
-    padding: 20px 20px; /* تعديل المساحة حول النصوص */
-    border-bottom: 1px solid #ddd; /* خط فاصل */
+    padding: 20px 20px; 
+    border-bottom: 1px solid #ddd; 
 }
 
 .mobile-navigation ul li a {
@@ -78,7 +71,7 @@ header{
     color: #124265;
     font-size: 18px;
     display: block;
-    width: 100%; /* اجعل العنصر يأخذ العرض الكامل */
+    width: 100%; 
 }
 
 header ul li a{
@@ -90,10 +83,9 @@ header ul li a{
 }
 header ul li {
  padding: 10px 30px;
- /* الطبيعي بتاعها انها تظهر العناصر واحدة فوق الأخرى في اتجاه عمودي li */
-/* block تخلي العناصر جنب بعضها مع الاحتفاظ بخصائص ال */
- /* display: inline-block; */
- /* نحطه عند الحاجة اللي عايزين القائمة تتموضع عندها */
+/* الطبيعي بتاعها انها تظهر العناصر واحدة فوق الأخرى في اتجاه عمودي li */
+/*  display: inline-block; تخلي العناصر جنب بعضها مع الاحتفاظ بخصائص ال */
+/* نحطه عند الحاجة اللي عايزين القائمة تتموضع عندها */
  position: relative;
 }
 
@@ -133,7 +125,7 @@ header .button1 a:hover,
     
 .dropdown {
     transition: all 0.5s ;
-    border: 1px solid #ddd; /* إضافة حدود اختيارية */
+    border: 1px solid #ddd; 
     background-color: white;
 
 }
@@ -240,7 +232,7 @@ li:hover > .dropdown2 {
 }
 
 .Home .card:hover {
-    transform: scale(1.1); /* Scale the entire card on hover */
+    transform: scale(1.1); 
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
 }
 
@@ -544,32 +536,32 @@ color: #5c5c5c;
     color: #cb2a7b ;
 }
 
-.icon-container1:hover {
-    background-color: #3eb4bd; /* تغيير لون الخلفية عند الـ hover */
+.card-body:hover >.icon-container1 {
+    background-color: #3eb4bd; 
 }
   
-.icon-container2:hover{
+.card-body:hover >.icon-container2  {
     background-color: orange; 
 }
-.icon-container3:hover{
+.card-body:hover >.icon-container3 {
     background-color: green; 
 }
 
-.icon-container4:hover{
+.card-body:hover >.icon-container4 {
     background-color:red; 
 }
 
-.icon-container5:hover{
+.card-body:hover >.icon-container5 {
     background-color: #5933cc; 
 }
 
-.icon-container6:hover{
+.card-body:hover >.icon-container6 {
     background-color:#cb2a7b; 
 }
 
-.icon-container1:hover .icon1,.icon-container2:hover .icon2,
-.icon-container3:hover .icon3,.icon-container4:hover .icon4,
-.icon-container5:hover .icon5,.icon-container6:hover .icon6{
+.card-body:hover .icon1,.card-body:hover .icon2,
+.card-body:hover .icon3,.card-body:hover .icon4,
+.card-body:hover .icon5,.card-body:hover .icon6{
     color: #f0f0f0; 
 }
 
